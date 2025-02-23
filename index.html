@@ -2,78 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MapGuessr</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>MapGuessr</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
-        <h1>MAPGUESSR</h1>
-        <p>About</p>
+        <h1 class="items">MAPGUESSR</h1>
+        <p class="items">About</p>
     </div>
-    <div id="content">
+
+    <div class="content">
         <img id="today-image" src="Karelian_Isthmus_13_March_1940.png">
         <div id="guess-box">
-            <p>Guess Year:</p>
-            <select id="dropdown1" name="dropdown1">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <!-- <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            -->
-            </select>
-            <p>,</p>
-            <select id="dropdown2" name="dropdown2">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select id="dropdown3" name="dropdown3">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>     
-            <select id="dropdown4" name="dropdown4">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select id="dropdown-era" name="dropdown-era">
-                <option value="ce">C.E.</option>
-                <option value="bce">B.C.E.</option>
-            </select>
-            <button id="submit" name="submit">Submit</button>
+            <p class="items">Guess Year: </p>
+            <div class="all-dropdowns">
+                <select id="dropdown1" name="dropdown1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <!-- <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                -->
+                </select>
+                <p>,</p>
+                <select id="dropdown2" name="dropdown2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select id="dropdown3" name="dropdown3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>     
+                <select id="dropdown4" name="dropdown4">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select id="dropdown-era" name="dropdown-era">
+                    <option value="ce">C.E.</option>
+                    <option value="bce">B.C.E.</option>
+                </select>
+            </div>
+            <button id="submit" name="submit" class="items">Submit</button>
         </div>
     </div>
+    <p class="spacer"> </p>
     <div class="footer">
-        <p>More</p>
+        <p class="items">More</p>
     </div>
 </body>
 </html>
