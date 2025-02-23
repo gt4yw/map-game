@@ -36,6 +36,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     background-color: #EAE8DD;
+    min-width: 0;
 }
 
 .spacer {
@@ -46,8 +47,11 @@ body {
 }
 
 #today-image {
+    width: 100%;
     max-width: max-content;
-    min-width: min-content;
+    height: auto;
+    flex-shrink: 1;
+    /* min-width: min-content; */
     padding: 10px;
 }
 
