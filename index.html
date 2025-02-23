@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MapGuessr</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>MAPGUESSR</h1>
         <p>About</p>
-    </header>
-    <body>
-        <img id="todayimage" src="Karelian_Isthmus_13_March_1940.png">
+    </div>
+    <div id="content">
+        <img id="today-image" src="Karelian_Isthmus_13_March_1940.png">
         <div id="guess-box">
             <p>Guess Year:</p>
             <select id="dropdown1" name="dropdown1">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="3">3</option>
+                <!-- <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
+            -->
             </select>
             <p>,</p>
             <select id="dropdown2" name="dropdown2">
@@ -69,9 +71,9 @@
             </select>
             <button id="submit" name="submit">Submit</button>
         </div>
-    </body>
-    <footer>
+    </div>
+    <div class="footer">
         <p>More</p>
-    </footer>
+    </div>
 </body>
 </html>
