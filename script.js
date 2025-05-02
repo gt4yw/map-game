@@ -15,21 +15,18 @@ const rightEra = "C.E.";
 
 const guessBox = document.querySelector("#guess-box");
 const button = document.querySelector("#submit");
-const y1 = document.querySelector("#dropdown1");
-const y2 = document.querySelector("#dropdown2");
-const y3 = document.querySelector("#dropdown3");
-const y4 = document.querySelector("#dropdown4");
+const yearInput = document.querySelector("#year-input");
 const era = document.querySelector("#dropdown-era");
 const score = document.querySelector("#score");
 const answer = document.querySelector("#answer");
 
 
 button.addEventListener("click", () => {
-    const userYear = 1000*y1.value + 100*y2.value + 10*y3.value + 1*y4.value; 
-    console.log(userYear);
+    let userYear = parseInt(yearInput.value);
     const userEra = era.value;
-    if (userEra === "B.C.E") {
-        userYear = 0 - userYear;
+    
+    if (userEra === "bce") {
+        userYear = -userYear;
     }
     
     guessBox.remove();

@@ -3,87 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>MapGuessr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapGuessr</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
-        <h1 class="items">MAPGUESSR</h1>
-        <p class="items"> </p> <!-- about -->
+        <h1 class="items"><a href="index.html" style="color: inherit; text-decoration: none;">MAPGUESSR</a></h1>
+        <p class="items">Test your historical knowledge!</p>
     </div>
 
     <div class="content">
-        <img id="today-image" src="Karelian_Isthmus_13_March_1940.png">
-        <div id="guess-box">
-            <p class="items">Guess Year: </p>
-            <div class="all-dropdowns">
-                <select id="dropdown1" name="dropdown1">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <!-- <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                -->
-                </select>
-                <p>,</p>
-                <select id="dropdown2" name="dropdown2">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-                <select id="dropdown3" name="dropdown3">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>     
-                <select id="dropdown4" name="dropdown4">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-                <select id="dropdown-era" name="dropdown-era">
-                    <option value="ce">C.E.</option>
-                    <option value="bce">B.C.E.</option>
-                </select>
-            </div>
-            <button id="submit" name="submit" class="items">Submit</button>
-        </div>
-        <div id="answer-box">
-            <h3 id="score"></h3>
-            <p id="answer"></p>
-    
+        <div class="game-modes">
+            <a href="battle.html" class="mode-box">
+                <h2>Battle Mode</h2>
+                <p>Challenge yourself with historical battle maps</p>
+            </a>
+            <a href="hard.html" class="mode-box">
+                <h2>Hard Mode</h2>
+                <p>Test your expertise with difficult historical maps</p>
+            </a>
+            <a href="easy.html" class="mode-box">
+                <h2>Easy Mode</h2>
+                <p>Start with simpler historical maps</p>
+            </a>
         </div>
     </div>
-    <p class="spacer"> </p>
+
     <div class="footer">
-        <p class="items"><a>About</a></p>
+        <p class="items"><a href="about.html" style="color: inherit; text-decoration: none;">About</a></p>
     </div>
 </body>
 </html>

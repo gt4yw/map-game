@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>MapGuessr</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="items"><a href="index.html" style="color: inherit; text-decoration: none;">MAPGUESSR</a></h1>
+        <p class="items"> </p> <!-- about -->
+    </div>
+
+    <div class="content">
+        <img id="today-image" src="Karelian_Isthmus_13_March_1940.png">
+        <div id="guess-box">
+            <p class="items">Guess Year: </p>
+            <div class="all-dropdowns">
+                <input type="number" id="year-input" name="year-input" min="0" max="9999" maxlength="4" pattern="\d*" inputmode="numeric">
+                <select id="dropdown-era" name="dropdown-era">
+                    <option value="ce">C.E.</option>
+                    <option value="bce">B.C.E.</option>
+                </select>
+            </div>
+            <button id="submit" name="submit" class="items">Submit</button>
+        </div>
+        <div id="answer-box">
+            <h3 id="score"></h3>
+            <p id="answer"></p>
+    
+        </div>
+    </div>
+    <p class="spacer"> </p>
+    <div class="footer">
+        <p class="items"><a href="about.html" style="color: inherit; text-decoration: none;">About</a></p>
+    </div>
+</body>
+</html>
