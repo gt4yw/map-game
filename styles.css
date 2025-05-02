@@ -159,3 +159,37 @@ button {
 .about-content li {
     margin-bottom: 10px;
 }
+
+#answer-box {
+    flex: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+#answer-box.visible {
+    display: flex;
+}
+
+#score {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#answer {
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#answer a {
+    color: #1a1a2e;
+    text-decoration: underline;
+}
