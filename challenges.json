@@ -1,21 +1,37 @@
 {
   "challenges": [
     {
-      "day": 1,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Karelian_Isthmus_13_March_1940.png/800px-Karelian_Isthmus_13_March_1940.png",
+      "category": "Battle",
+      "gameDate": "2025-05-04",
+      "localURL": "images/Karelian_Isthmus_13_March_1940.png",
+      "webURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Karelian_Isthmus_13_March_1940.png/800px-Karelian_Isthmus_13_March_1940.png",
+      "AWSURL": "",
       "year": 1940,
       "era": "C.E.",
-      "wikipediaLink": "https://en.wikipedia.org/wiki/Winter_War#Soviet_invasion",
+      "linkToBackground": "https://en.wikipedia.org/wiki/Winter_War#Soviet_invasion",
       "description": "Winter War - Soviet invasion of Finland"
     },
     {
-      "day": 2,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Battle_of_Hastings_map.jpg/800px-Battle_of_Hastings_map.jpg",
-      "year": 1066,
+      "category": "Easy",
+      "gameDate": "2025-05-04",
+      "localURL": "images/1555-56_CE_World_Map.png",
+      "webURL": "https://upload.wikimedia.org/wikipedia/commons/9/9e/1555-56_CE_World_Map.PNG",
+      "AWSURL": "",
+      "year": 1556,
       "era": "C.E.",
-      "wikipediaLink": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
-      "description": "Battle of Hastings"
+      "linkToBackground": "https://en.wikipedia.org/wiki/1550s",
+      "description": "Full World in the 1550s ('55-56)"
+    },
+    {
+      "category": "Hard",
+      "gameDate": "2025-05-04",
+      "localURL": "images/Europe_in_1328.png",
+      "webURL": "https://en.wikipedia.org/wiki/14th_century#/media/File:Europe_in_1328.png",
+      "AWSURL": "",
+      "year": 1328,
+      "era": "C.E.",
+      "linkToBackground": "https://en.wikipedia.org/wiki/14th_century#",
+      "description": "Europe political boundaries in 1328"
     }
-    // Add more challenges here for each day
   ]
 } 

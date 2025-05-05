@@ -26,23 +26,46 @@ let currentChallenge = null;
 async function loadDailyChallenge() {
     try {
         const response = await fetch('challenges.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         
-        // Get the day of the year (1-365)
-        const now = new Date();
-        const start = new Date(now.getFullYear(), 0, 0);
-        const diff = now - start;
-        const oneDay = 1000 * 60 * 60 * 24;
-        const dayOfYear = Math.floor(diff / oneDay);
+        // Get today's date in YYYY-MM-DD format
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const todayFormatted = `${year}-${month}-${day}`;
         
-        // Get the challenge for today (using modulo to cycle through challenges)
-        const challengeIndex = dayOfYear % data.challenges.length;
-        currentChallenge = data.challenges[challengeIndex];
+        // Get the current page category from the URL
+        const currentPage = window.location.pathname.split('/').pop();
+        let category = 'Battle'; // default
+        if (currentPage === 'easy.html') {
+            category = 'Easy';
+        } else if (currentPage === 'hard.html') {
+            category = 'Hard';
+        }
+        
+        // Find the challenge that matches both today's date and the current category
+        currentChallenge = data.challenges.find(challenge => 
+            challenge.gameDate === todayFormatted && 
+            challenge.category === category
+        );
+        
+        if (!currentChallenge) {
+            console.error(`No ${category} challenge found for today`);
+            return;
+        }
         
         // Update the image source
         const mapImage = document.querySelector('#today-image');
-        if (mapImage) {
-            mapImage.src = currentChallenge.imageUrl;
+        if (mapImage && currentChallenge.localURL) {
+            mapImage.src = currentChallenge.localURL;
+            mapImage.alt = currentChallenge.description || 'Historical Map';
+            mapImage.style.width = '100%';
+            mapImage.style.height = 'auto';
+            mapImage.style.maxWidth = '800px';
         }
 
         // Set up the button click handler after we have the challenge
@@ -66,7 +89,7 @@ async function loadDailyChallenge() {
             answer.textContent = " You guessed " + userYear + " " + userEra + "       ...the right answer was " + currentChallenge.year +" " + currentChallenge.era + "! Check out this map and the history behind it "
             
             const link = document.createElement('a');
-            link.href = currentChallenge.wikipediaLink;
+            link.href = currentChallenge.linkToBackground;
             link.textContent = "here.";
 
             answer.appendChild(link);

@@ -38,6 +38,8 @@ body {
     background-color: #EAE8DD;
     min-width: 0;
     padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .spacer {
@@ -47,13 +49,8 @@ body {
     margin: 0;
 }
 
-#today-image {
-    width: 100%;
-    max-width: max-content;
-    height: auto;
-    flex-shrink: 1;
-    /* min-width: min-content; */
-    padding: 10px;
+.content img#today-image {
+    
 }
 
 #guess-box {
