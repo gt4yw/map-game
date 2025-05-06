@@ -38,6 +38,7 @@ async function loadDailyChallenge() {
         const day = String(today.getDate()).padStart(2, '0');
         const todayFormatted = `${year}-${month}-${day}`;
         
+
         // Get the current page category from the URL
         const currentPage = window.location.pathname.split('/').pop();
         let category = 'Battle'; // default
@@ -54,6 +55,7 @@ async function loadDailyChallenge() {
         );
         
         if (!currentChallenge) {
+            console.log("hi");
             console.error(`No ${category} challenge found for today`);
             return;
         }

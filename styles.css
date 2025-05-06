@@ -27,6 +27,12 @@ body {
     justify-content: end;
     align-items: center;
     margin-top: auto;
+    padding: 0 40px;
+}
+
+.items a {
+    text-decoration: none;
+    color: #EAE8DD;
 }
 
 .content {
