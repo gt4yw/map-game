@@ -25,6 +25,8 @@ let currentChallenge = null;
 // Function to load the daily challenge
 async function loadDailyChallenge() {
     try {
+        
+        // Get the image options from the challenges json file
         const response = await fetch('challenges.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
