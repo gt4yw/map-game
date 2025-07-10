@@ -70,6 +70,13 @@ async function loadDailyChallenge() {
             mapImage.style.width = '100%';
             mapImage.style.height = 'auto';
             mapImage.style.maxWidth = '800px';
+            
+            // Initialize medium-zoom on the image
+            mediumZoom(mapImage, {
+                margin: 24,
+                background: 'rgba(0, 0, 0, 0.9)',
+                scrollOffset: 0
+            });
         }
 
         // Set up the button click handler after we have the challenge
