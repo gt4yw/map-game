@@ -2,7 +2,7 @@
   "challenges": [
     {
       "category": "Battle",
-      "gameDate": "2025-08-05",
+      "gameDate": "2025-08-04",
       "localURL": "images/Karelian_Isthmus_13_March_1940.png",
       "webURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Karelian_Isthmus_13_March_1940.png/800px-Karelian_Isthmus_13_March_1940.png",
       "AWSURL": "",
@@ -13,7 +13,7 @@
     },
     {
       "category": "Easy",
-      "gameDate": "2025-08-05",
+      "gameDate": "2025-08-04",
       "localURL": "images/1555-56_CE_World_Map.png",
       "webURL": "https://upload.wikimedia.org/wikipedia/commons/9/9e/1555-56_CE_World_Map.PNG",
       "AWSURL": "",
@@ -24,7 +24,7 @@
     },
     {
       "category": "Hard",
-      "gameDate": "2025-08-05",
+      "gameDate": "2025-08-04",
       "localURL": "images/Europe_in_1328.png",
       "webURL": "https://en.wikipedia.org/wiki/14th_century#/media/File:Europe_in_1328.png",
       "AWSURL": "",
@@ -32,6 +32,28 @@
       "era": "C.E.",
       "linkToBackground": "https://en.wikipedia.org/wiki/14th_century#",
       "description": "Europe political boundaries in 1328"
+    },
+    {
+      "category": "Battle",
+      "gameDate": "2025-08-11",
+      "localURL": "images/Battle_of_Cannae.jpeg",
+      "webURL": "https://en.wikipedia.org/wiki/Battle_of_Cannae#/media/File:Battle_cannae_destruction.svg",
+      "AWSURL": "",
+      "year": 216,
+      "era": "B.C.E.",
+      "linkToBackground": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
+      "description": "Battle ofCannae"
+    },
+    {
+      "category": "Hard",
+      "gameDate": "2025-08-11",
+      "localURL": "images/1555-56_CE_World_Map.png",
+      "webURL": "https://upload.wikimedia.org/wikipedia/commons/9/9e/1555-56_CE_World_Map.PNG",
+      "AWSURL": "",
+      "year": 1556,
+      "era": "C.E.",
+      "linkToBackground": "https://en.wikipedia.org/wiki/1550s",
+      "description": "Full World in the 1550s ('55-56)"
     }
   ]
 } 
