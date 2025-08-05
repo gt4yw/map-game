@@ -40,6 +40,8 @@ async function loadDailyChallenge() {
         const day = String(today.getDate()).padStart(2, '0');
         const todayFormatted = `${year}-${month}-${day}`;
         
+        // Convert today's date to a Date object for comparison
+        const todayDate = new Date(todayFormatted);
 
         // Get the current page category from the URL
         const currentPage = window.location.pathname.split('/').pop();
@@ -49,12 +51,24 @@ async function loadDailyChallenge() {
         } else if (currentPage === 'hard.html') {
             category = 'Hard';
         }
-        
+
+        // Depreciated method that requires exact date match
         // Find the challenge that matches both today's date and the current category
-        currentChallenge = data.challenges.find(challenge => 
-            challenge.gameDate === todayFormatted && 
-            challenge.category === category
-        );
+        // currentChallenge = data.challenges.find(challenge => 
+        //     challenge.gameDate === todayFormatted && 
+        //     challenge.category === category
+        // );
+        
+        // Find the challenge that matches the category and is within 7 days after the game date
+        currentChallenge = data.challenges.find(challenge => {
+            if (challenge.category !== category) return false;
+            
+            const challengeDate = new Date(challenge.gameDate);
+            const daysDifference = (todayDate - challengeDate) / (1000 * 60 * 60 * 24);
+            
+            // Accept challenges that are on the game date or up to 7 days after
+            return daysDifference >= 0 && daysDifference <= 7;
+        });
         
         if (!currentChallenge) {
             console.log("hi");
