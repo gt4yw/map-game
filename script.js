@@ -67,7 +67,7 @@ async function loadDailyChallenge() {
             const daysDifference = (todayDate - challengeDate) / (1000 * 60 * 60 * 24);
             
             // Accept challenges that are on the game date or up to 7 days after
-            return daysDifference >= 0 && daysDifference <= 7;
+            return daysDifference >= 0 && daysDifference <= 6;
         });
         
         if (!currentChallenge) {
