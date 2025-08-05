@@ -1,10 +1,4 @@
 {
-    "rewrites": [
-      { "source": "/about", "destination": "/about.html" },
-      { "source": "/", "destination": "/index.html" },
-      { "source": "/battle", "destination": "/battle.html" },
-      { "source": "/easymap", "destination": "/easy.html" },
-      { "source": "/map", "destination": "/hard.html" }
-    ]
-  }
+    "cleanUrls": true
+}
   
