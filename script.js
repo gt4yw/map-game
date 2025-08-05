@@ -45,10 +45,12 @@ async function loadDailyChallenge() {
 
         // Get the current page category from the URL
         const currentPage = window.location.pathname.split('/').pop();
+        // keep only the first 4 characters of the current page, so that it works with clean URLs in Vercel
+        let clean_currentPage = currentPage.substring(0,4);
         let category = 'Battle'; // default
-        if (currentPage === 'easy.html') {
+        if (clean_currentPage === 'easy') {
             category = 'Easy';
-        } else if (currentPage === 'hard.html') {
+        } else if (clean_currentPage === 'hard') {
             category = 'Hard';
         }
 
